@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "fe864964-cd64-4122-b87e-39b1a05b7551",
+		"name": "M07_UF4_ACT1_UMBRELLA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43536885"
+	},
+	"item": [
+		{
+			"name": "Comentarios",
+			"item": [
+				{
+					"name": "getComentarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/M07/UF4/2425-daw2-uf4-a01-tomasaudi/backend/API/comentariosAPI.php?imagen_id=1\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"M07",
+								"UF4",
+								"2425-daw2-uf4-a01-tomasaudi",
+								"backend",
+								"API",
+								"comentariosAPI.php"
+							],
+							"query": [
+								{
+									"key": "imagen_id",
+									"value": "1\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addComentario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/M07/UF4/2425-daw2-uf4-a01-tomasaudi/backend/API/comentariosAPI.php/addComentario\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"M07",
+								"UF4",
+								"2425-daw2-uf4-a01-tomasaudi",
+								"backend",
+								"API",
+								"comentariosAPI.php",
+								"addComentario\n"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Contiene los endpoints relacionados con los **comentarios de imágenes**. Permite obtener los comentarios de una imagen específica y añadir nuevos comentarios. Actualmente, los comentarios son anónimos."
+		},
+		{
+			"name": "Imagenes",
+			"item": [
+				{
+					"name": "getImagenes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/M07/UF4/2425-daw2-uf4-a01-tomasaudi/backend/API/imagenesAPI.php?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"M07",
+								"UF4",
+								"2425-daw2-uf4-a01-tomasaudi",
+								"backend",
+								"API",
+								"imagenesAPI.php"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addImagen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/M07/UF4/2425-daw2-uf4-a01-tomasaudi/backend/API/imagenesAPI.php/addImagen\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"M07",
+								"UF4",
+								"2425-daw2-uf4-a01-tomasaudi",
+								"backend",
+								"API",
+								"imagenesAPI.php",
+								"addImagen\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteImagen",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 30\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/M07/UF4/2425-daw2-uf4-a01-tomasaudi/backend/API/imagenesAPI.php/deleteImagen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"M07",
+								"UF4",
+								"2425-daw2-uf4-a01-tomasaudi",
+								"backend",
+								"API",
+								"imagenesAPI.php",
+								"deleteImagen"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Gestiona la **subida, obtención y eliminación de imágenes**. También devuelve información adicional como el número de \"me gusta\" y comentarios por imagen. Soporta paginación y subida mediante `multipart/form-data`."
+		},
+		{
+			"name": "MeGusta",
+			"item": [
+				{
+					"name": "MeGusta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"imagen_id\": 30\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/M07/UF4/2425-daw2-uf4-a01-tomasaudi/backend/API/megustaAPI.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"M07",
+								"UF4",
+								"2425-daw2-uf4-a01-tomasaudi",
+								"backend",
+								"API",
+								"megustaAPI.php"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Controla el sistema de **\"Me Gusta\"** para las imágenes. Funciona como un interruptor (toggle): si el usuario ya ha dado like, lo quita; si no, lo añade. Devuelve el total actualizado de likes por imagen."
+		}
+	]
+}
