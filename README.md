@@ -132,7 +132,7 @@ frontend/
 ## ☣ Observaciones personales ☣
 - Todos los elementos han sido creados por mi mismo en Photoshop, menos el logo y los fotomontajes subidos en la galería.
 - El proyecto no esta finalizado y hay varios ajustes a realizar, aún asi, podria decir que es uno de mis diseños favoritos.
-- Hay varios commits fuera de fecha, eso es porque quiero dejar el sitio pulido, con la mejor experiencia de usuario posible.
+
 #### ☣ Autor ☣
 **Tomàs Audi**
 [@taudigilabert](https://github.com/taudigilabert)
