@@ -135,6 +135,9 @@ frontend/
 
 #### ☣ Autor ☣
 **Tomàs Audi**
-[@taudigilabert](https://github.com/taudigilabert)
+[@taudigilabert](https://github.com/taudigilabert)  
+
+*Video demostración en YouTube:* 
+[![Ver en YouTube](https://img.youtube.com/vi/fO48-LmAzGQ/0.jpg)](https://youtu.be/GxYhIyB3Cf0?si=FbLZQZGEjSBvqnvw)
 
 [Ver documentación de la API en Postman](https://.postman.co/workspace/My-Workspace~cdf686be-bf60-4b86-8659-972d6e72ce54/collection/43536885-fe864964-cd64-4122-b87e-39b1a05b7551?action=share&creator=43536885)
